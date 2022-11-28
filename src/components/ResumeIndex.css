@@ -1,0 +1,22 @@
+
+#navbarDiv{
+    padding: 1px;
+    width: 100%;
+    position:-webkit-sticky;
+    position:fixed;
+    top: 0px;
+}
+
+.homeDiv{
+    box-sizing: border-box;
+    padding: 1px;
+    width: 100%;
+    position: relative;
+}
+
+.aboutDiv{
+    height: 880px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}

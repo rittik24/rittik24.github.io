@@ -1,0 +1,62 @@
+#mainContainer {
+    border: 1px solid ;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+#mainContainer >div{
+    /* border: 1px solid red; */
+    width: 550px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+h3{
+    margin-right: auto;
+    
+}
+
+.link{
+    color: #ECDBBA;
+    text-decoration: none;
+
+}
+.profilepic{
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto; 
+    /* border: 1px solid red; */
+}
+.profilepic>img{
+   
+    border-radius: 50%;
+}
+
+.theme-cont {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.theme-btn {
+    width: fit-content;
+    height: fit-content;
+    float: right;
+    padding: 0.10rem;
+    margin-top: 23px;
+    margin-right: 20px;
+    right: 100%;
+    border-radius: 50%;
+    transition: "all 1s ease-in-out";
+    cursor: pointer;
+} 
+.theme-btn:hover {
+    color: rgb(235, 79, 79);
+}
