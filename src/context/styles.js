@@ -12,7 +12,7 @@ export const Themes = {
     "light": {
         "navbar": {
             "color": "#160040",     
-            "background": "#02aefd"
+            "background": "rgb(2, 157, 157)"
         }, 
         "home": {
             "color": "#150050",

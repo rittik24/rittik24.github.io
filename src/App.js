@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import ResumeIndex from './components/ResumeIndex';
+import { ResumeIndex } from './components/ResumeIndex';
+
 
 function App() {
   return (

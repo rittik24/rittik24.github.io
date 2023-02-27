@@ -1,0 +1,73 @@
+#githubID {
+    overflow: hidden;
+    background-color: #edf2f8;
+    /* border: 1px solid red; */
+  }
+  #githubID > div {
+    width:  70%;
+    margin: 30px auto;
+    /* border: 1px solid red; */
+    padding: 40px 0;
+    margin-left: 30px;
+    gap: 20px;
+  }
+  .stats_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .stats_container > img {
+    width: 80%;
+    margin: 10px auto;
+  }
+  /* @media screen and (max-width: 1000px) {
+    #github_section > div {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #github_section > div {
+      width: 95%;
+      margin: auto;
+    }
+  } */
+
+  .calender{
+    margin: auto;
+    border: 2px solid rgb(224, 222, 222);
+    padding:5px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
+.gitCalender>p{
+    font-size: 55px;
+}
+.git-name{
+  font-size: 35px;
+  font-weight: bolder;
+}
+@media screen  and (max-width: 500px) {
+    .gitCalender>p{
+        font-size: 45px;
+    }
+    .stats>a{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .git-name{
+      font-size: 20px;
+      font-weight: bolder;
+    }
+ }
+ .stats{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    /* border: 1px solid red; */
+ }

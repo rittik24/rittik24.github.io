@@ -1,62 +1,191 @@
-#mainContainer {
-    border: 1px solid ;
-    border-left: none;
-    border-right: none;
-    padding: 10px;
-    display: flex;
-    position: absolute;
+.Navbar {
+    height: fit-content;
     width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    box-shadow: 0 8px 8px -4px rgba(52, 58, 139, 0.5);
+    /* box-shadow: 0 8px 8px -4px lightblue; */
+    animation: 1s ease-out 0s 1 slideInNavbarFromTop;
+    z-index: 3;
+    align-items: center;
 }
 
-#mainContainer >div{
-    /* border: 1px solid red; */
-    width: 550px;
-    text-align: center;
+.active {
+    color: rgb(73, 38, 188);
+    font-weight: 700 !important;
+}
+
+.NavRow {
     display: flex;
-    gap: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    
-    
-}
-h3{
-    margin-right: auto;
-    
+    margin-right: 20px;
+    /* border: 2px solid yellow; */
 }
 
-.link{
-    color: #ECDBBA;
-    text-decoration: none;
+.nav-cont {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    font: 12px Arial;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    background: rgba(100, 100, 100, 0.5);
+    background: linear-gradient(to top, rgba(100, 100, 100, 0) 50%, teal 50%) bottom;
+    background-size: 100% 200%;
+    transition: .1s ease-out;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
 
+.nav-cont>p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
 }
-.profilepic{
-    height: 70px;
-    margin-right: auto;
-    margin-left: auto; 
-    /* border: 1px solid red; */
-}
-.profilepic>img{
-   
-    border-radius: 50%;
+
+.nav-cont:hover {
+    background-position: top;
+    color: teal;
 }
 
 .theme-cont {
     flex-grow: 1;
-    margin-left: 50px;
 }
+
 
 .theme-btn {
     width: fit-content;
     height: fit-content;
     float: right;
-    padding: 0.10rem;
-    margin-top: 23px;
+    padding: 0.6rem;
+    margin-top: 5px;
     margin-right: 20px;
-    right: 100%;
     border-radius: 50%;
     transition: "all 1s ease-in-out";
     cursor: pointer;
-} 
+    align-items: center;
+}
+
 .theme-btn:hover {
-    color: rgb(235, 79, 79);
+    opacity: 0.4;
+}
+
+.profilepic {
+    width: fit-content;
+    height: 70px;
+    margin-right: auto;
+    display: flex;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+    margin-left: 300px;
+    color: white;
+
+}
+
+.profilepic>img {
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: fit-content;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.profilepic>h3 {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.Resume {
+    border: none;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    padding-left: 10%;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.Resume:hover {
+    cursor: pointer;
+}
+.mobile-menu-btn {
+    display: none;
+  }
+
+
+@keyframes slideInNavbarFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only Screen and (max-width: 490px) {
+
+    .theme-cont {
+        display: none;
+    }
+
+    .nav-cont {
+        display: none;
+    }
+    .Resume{
+        display: none;
+    }
+
+    .nav-img {
+        margin-bottom: 10px;
+        border-radius: 50%;
+        width: fit-content;
+        height: 50px;
+        margin-top: 10px;
+        border: 1px solid red;
+        margin-left: 20px;
+    }
+
+    .nav-name {
+       display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        background-color: transparent;
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+      }
+}
+
+@media only Screen and (max-width: 800px) {
+    .nav-cont {
+        font-size: 0.7rem;
+    }
+
+    .theme-cont {
+        display: none;
+    }
+    .nav-name {
+        display: none;
+     }
+     .nav-img {
+        margin-bottom: 10px;
+        border-radius: 50%;
+        width: fit-content;
+        height: 50px;
+        margin-top: 10px;
+    }
 }

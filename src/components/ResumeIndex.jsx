@@ -1,24 +1,37 @@
-
-import Navbar from "./Navbar";
-import Home from "./Home";
-
-// import About from "./About";
+import { About } from "./About";
+import { Home } from "./Home";
+import  Navbar  from "./Navbar";
+import { Skills } from "./Skills";
 import "./ResumeIndex.css";
+import { useEffect, useState, useContext } from "react";
+import { ThemeContext } from '../context/ThemeContext';
+import { Project } from "./Projects";
+import { Contact } from "./Contact";
+import GitHubStats from "./GitHubStats";
 
-function ResumeIndex(){
+
+
+
+
+export const ResumeIndex = () => {
+    const { Themes, currentTheme } = useContext(ThemeContext);
+    const [loading, setloading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setloading(false);
+        }, 800)
+    }, [])
+
     return (
-        <div >
-            <div id="navbarDiv" >
-              <Navbar />
-            </div>
-            <div class="homeDiv">
-               <Home />
-            </div>   
-            {/* <div id="aboutDiv" >
-              <About />
-            </div>  */}
-        </div>       
+        <div>
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Project />
+            <GitHubStats />
+            <Contact />
+        </div>
     )
 }
-
-export default ResumeIndex;

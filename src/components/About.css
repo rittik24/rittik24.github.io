@@ -6,7 +6,7 @@
     justify-content: center;
     min-height: 70vh;
     height: fit-content;
-    z-index: 2;
+    /* z-index: 2; */
   }
   
   .main-about {
@@ -43,6 +43,7 @@
   
   .image {
       width: 50%;
+      height:fit-content;
       border-radius: 50%;
       margin: auto;
       animation: 1s ease-out 0s 1 slideInNameFromRight;
@@ -51,9 +52,10 @@
   .image > img {
       margin: auto;
       width: 100%;
-      border-radius: 50%;
-      background-color: snow;
+      border-radius: 20%;
+      /* background-color: snow; */
       max-height: 300px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   
   
@@ -86,12 +88,18 @@
     }
   
   
-    @media (max-width: 420px) {
+    @media (max-width: 490px) {
+      .main-about {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        /* border: 1px solid red; */
+        gap: 15px;
+      }
       .about-head {
-        font-size: 20px;
+        display: none;
       }
       .about-data {
-        font-size: 12px;
-      }
+        font-size: 15px;
+      } 
     }
   
