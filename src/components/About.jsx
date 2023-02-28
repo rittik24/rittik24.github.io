@@ -1,12 +1,9 @@
 import "./About.css";
 import Rittik from "../image/rittik.JPG";
-import { useContext } from 'react';
-import { ThemeContext } from "../context/ThemeContext";
-
 export const About = () => {
-    const { Themes, currentTheme } = useContext(ThemeContext);
+    
     return (
-        <section id="aboutID" className="section-about" style={currentTheme === "light" ? Themes.light.home : Themes.dark.home}>
+        <section id="aboutID" className="section-about" >
             <div className="main-about">
                 <div className="about aboutClass">
                     <h1 className="about-head">About me</h1>

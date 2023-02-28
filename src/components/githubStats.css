@@ -1,7 +1,9 @@
 #githubID {
     overflow: hidden;
-    background-color: #edf2f8;
+    /* background-color: #edf2f8; */
     /* border: 1px solid red; */
+    background-color:#001a1a ;
+    color: #FBFFE2;
   }
   #githubID > div {
     width:  70%;
@@ -11,7 +13,7 @@
     margin-left: 30px;
     gap: 20px;
   }
-  .stats_container {
+  /* .stats_container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,7 +23,7 @@
   .stats_container > img {
     width: 80%;
     margin: 10px auto;
-  }
+  } */
   /* @media screen and (max-width: 1000px) {
     #github_section > div {
       width: 90%;

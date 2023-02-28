@@ -58,23 +58,6 @@
 }
 
 
-.theme-btn {
-    width: fit-content;
-    height: fit-content;
-    float: right;
-    padding: 0.6rem;
-    margin-top: 5px;
-    margin-right: 20px;
-    border-radius: 50%;
-    transition: "all 1s ease-in-out";
-    cursor: pointer;
-    align-items: center;
-}
-
-.theme-btn:hover {
-    opacity: 0.4;
-}
-
 .profilepic {
     width: fit-content;
     height: 70px;
@@ -100,26 +83,6 @@
     margin-bottom: 10px;
 }
 
-.Resume {
-    border: none;
-    width: 100px;
-    height: 50px;
-    background-color: transparent;
-    color: white;
-    padding-left: 10%;
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.Resume:hover {
-    cursor: pointer;
-}
-.mobile-menu-btn {
-    display: none;
-  }
 
 
 @keyframes slideInNavbarFromTop {

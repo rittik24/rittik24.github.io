@@ -1,7 +1,6 @@
 
-import { ReactNode, useContext } from 'react';
+import { ReactNode } from 'react';
 import { Link } from 'react-scroll';
-import { ThemeContext } from '../context/ThemeContext';
 import Resume from "./Resume.pdf"
 import {
     Box,
@@ -22,7 +21,6 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 export default function Simple() {
-    const { Themes, currentTheme, handleChangeTheme } = useContext(ThemeContext);
     const { isOpen, onOpen, onClose } = useDisclosure();
     const navCont = [{ to: "homeID", text: "HOME", id: 1 }, { to: "aboutID", text: "ABOUT", id: 2 },
     { to: "skillsID", text: "SKILLS", id: 3 }, { to: "projectsID", text: "PROJECTS", id: 4 },
@@ -33,14 +31,15 @@ export default function Simple() {
     return (
         <>
 
-            <Box className='navbar' bg={useColorModeValue('blue.300', 'blue.300')} position={"fixed"} top={"0px"} width={"100%"} zIndex={"10"} px={4}>
+            <Box className='navbar' bg={useColorModeValue('blue.300', 'blue.300')} position={"fixed"} top={"0px"} width={"100%"} zIndex={"10"} px={4} color={"black"}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
-                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon fontSize={"25px"} />}
                         aria-label={'Open Menu'}
                         display={{ md: 'none' }}
                         onClick={isOpen ? onClose : onOpen}
+                        variant={"unstyled"}
                     />
                     <HStack spacing={8} alignItems={'center'}>
                         <Box fontSize={"20px"} fontWeight={"bold"}>Rittik Haldar</Box>
@@ -80,11 +79,11 @@ export default function Simple() {
                                 />
                             </MenuButton>
                             <MenuList>
-                                <a href="https://www.linkedin.com/in/rittik-haldar/" target={"_blank"}> <MenuItem>Linkdin</MenuItem></a>
-                                <a href="https://github.com/rittik24" target={"_blank"}><MenuItem>GitHub</MenuItem></a>
+                                <a href="https://www.linkedin.com/in/rittik-haldar/" target={"_blank"}> <MenuItem style={{color:"black"}}>Linkdin</MenuItem></a>
+                                <a href="https://github.com/rittik24" target={"_blank"}><MenuItem style={{color:"black"}}>GitHub</MenuItem></a>
                                 <MenuDivider />
-                                <a target="_blank" href="mailto:rttkhaldar@gmail.com"> <MenuItem>Mail:rttkhaldar@gmail.com</MenuItem> </a>
-                                <MenuItem>7029358074</MenuItem>
+                                <a target="_blank" href="mailto:rttkhaldar@gmail.com"> <MenuItem style={{color:"black"}}>rttkhaldar@gmail.com</MenuItem> </a>
+                                <MenuItem style={{color:"black"}}>7029358074</MenuItem>
                             </MenuList>
                         </Menu>
                     </Flex>
@@ -94,7 +93,7 @@ export default function Simple() {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             {navCont.map((ele) => (
-                                <Link style={{ cursor: "pointer" }} key={ele.id} to={ele.to} spy={true} smooth={true} >{ele.text}</Link>
+                                <Link style={{ cursor: "pointer" }} key={ele.id} to={ele.to} spy={true} smooth={true} onClick={()=>onClose()}>{ele.text}</Link>
                             ))}
                             <a
                                 href={Resume}

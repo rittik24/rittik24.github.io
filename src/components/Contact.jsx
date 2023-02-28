@@ -1,23 +1,21 @@
-import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
+
 import "./contact.css";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export const Contact = () => {
-    const { Themes, currentTheme } = useContext(ThemeContext);
     return (
-        <section id='contactID' className="section-footer" style={currentTheme === "light" ? Themes.light.navbar : Themes.dark.navbar}>
+        <section id='contactID' className="section-footer" >
 
             <div className="footer" >
                 <h1>Contact Me</h1>
                 <div className="contact-each" >
-                    <a style={currentTheme === "light" ? { color: "#150050" } : { color: "#FBFFE2" }} className="connect-content" rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/rittik-haldar">
+                    <a  className="connect-content" rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/rittik-haldar">
                         <FaLinkedin />
                     </a>
-                    <a style={currentTheme === "light" ? { color: "#150050" } : { color: "#FBFFE2" }} className="connect-content" rel="noopener noreferrer" target="_blank" href="mailto:rttkhaldar@gmail.com">
+                    <a  className="connect-content" rel="noopener noreferrer" target="_blank" href="mailto:rttkhaldar@gmail.com">
                         <FaEnvelope />
                     </a>
-                    <a style={currentTheme === "light" ? { color: "#150050" } : { color: "#FBFFE2" }} className="connect-content" rel="noopener noreferrer" target="_blank" href="https://github.com/rittik24">
+                    <a  className="connect-content" rel="noopener noreferrer" target="_blank" href="https://github.com/rittik24">
                         <FaGithub />
                     </a>
                 </div>

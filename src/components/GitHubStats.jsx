@@ -1,14 +1,10 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import style from "./githubStats.css";
-import { ThemeContext } from '../context/ThemeContext';
-import { useContext } from 'react';
-
 
 export const GitHubStats = () => {
-  const { Themes, currentTheme } = useContext(ThemeContext)
   return (
-    <div id="githubID" style={currentTheme === "light" ? Themes.light.home : Themes.dark.home}>
+    <div id="githubID" >
       <div
         style={{
           padding: "20px",

@@ -7,6 +7,8 @@
     min-height: 70vh;
     height: fit-content;
     /* z-index: 2; */
+    background-color:#001a1a ;
+    color: #FBFFE2;
   }
   
   .main-about {
@@ -39,6 +41,8 @@
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
   }
   
   .image {
