@@ -1,4 +1,4 @@
-.Navbar {
+/* .Navbar {
     height: fit-content;
     width: 100%;
     margin: auto;
@@ -8,22 +8,18 @@
     z-index: 1;
     top: 0px;
     box-shadow: 0 8px 8px -4px rgba(52, 58, 139, 0.5);
-    /* box-shadow: 0 8px 8px -4px lightblue; */
+    box-shadow: 0 8px 8px -4px lightblue;
     animation: 1s ease-out 0s 1 slideInNavbarFromTop;
     z-index: 3;
     align-items: center;
-}
+} */
 
-.active {
-    color: rgb(73, 38, 188);
-    font-weight: 700 !important;
-}
 
-.NavRow {
+ /* .NavRow {
     display: flex;
     margin-right: 20px;
-    /* border: 2px solid yellow; */
-}
+    border: 2px solid yellow;
+}  */
 
 .nav-cont {
     flex-grow: 1;
@@ -83,17 +79,6 @@
     margin-bottom: 10px;
 }
 
-
-
-@keyframes slideInNavbarFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
 
 @media only Screen and (max-width: 490px) {
 

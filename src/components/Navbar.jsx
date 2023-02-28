@@ -20,11 +20,12 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-export default function Simple() {
+export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const navCont = [{ to: "homeID", text: "HOME", id: 1 }, { to: "aboutID", text: "ABOUT", id: 2 },
     { to: "skillsID", text: "SKILLS", id: 3 }, { to: "projectsID", text: "PROJECTS", id: 4 },
     { to: "contactID", text: "CONTACT", id: 5 }, { to: "githubID", text: "GITHUB", id: 6 }];
+    
     const handleOpenAndDownlaodResume = () => {
         window.open(`${Resume}`,"_blank");
     };

@@ -1,8 +1,9 @@
 
 import {
-    SiCss3, SiNpm, SiHtml5, SiJavascript,
+    SiCss3, SiHtml5, SiJavascript,
     SiRedux, SiReact, SiMaterialui, SiNodedotjs,
-    SiGithub, SiVisualstudiocode, SiNextdotjs, SiChakraui, SiTypescript, SiNetlify, SiMongodb, SiExpress,SiPostman
+    SiGithub, SiVisualstudiocode, SiNextdotjs, SiChakraui, 
+    SiTypescript, SiNetlify, SiMongodb, SiExpress, SiPostman
 } from "react-icons/si";
 import "./skills.css";
 

@@ -15,7 +15,7 @@ export const Home = () => {
                     <h2 className="infoo">Hi, I'am</h2>
                     <h1 className="my-name">RITTIK HALDAR</h1>
                     <h2 className="infoo">Full-Stack web developer</h2>
-                    <a href={Resume} download="fw19_0770_Rittik_Haldar_Resume" onClick={Handleonclick} rel="noopener noreferrer" ><button className="resume"  >My Resume</button></a>
+                    <a href={Resume} download="fw19_0770_Rittik_Haldar_Resume" onClick={Handleonclick} ><button className="resume"  >My Resume</button></a>
                 </div>
                 <div className="hero">
                     <img src={hero} alt="hero" />

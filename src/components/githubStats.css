@@ -45,6 +45,10 @@
     margin-bottom: 40px;
     /* border: 1px solid red; */
 }
+.gitCalender{
+  width: 100%;
+  border: 1px solid red;
+}
 .gitCalender>p{
     font-size: 55px;
 }
