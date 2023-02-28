@@ -51,9 +51,9 @@
   font-weight: bolder;
 }
 @media screen  and (max-width: 500px) {
-    .gitCalender>p{
+    /* .gitCalender>p{
         font-size: 45px;
-    }
+    } */
     .stats>a{
         width: 80%;
         margin: auto;
@@ -63,6 +63,9 @@
       font-size: 20px;
       font-weight: bolder;
     }
+    .gitCalender>p{
+      font-size: 20px;
+  }
  }
  .stats{
     display: flex;

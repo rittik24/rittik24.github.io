@@ -7,11 +7,7 @@ import { useEffect, useState, useContext } from "react";
 import { ThemeContext } from '../context/ThemeContext';
 import { Project } from "./Projects";
 import { Contact } from "./Contact";
-import GitHubStats from "./GitHubStats";
-
-
-
-
+import {GitHubStats} from "./GitHubStats";
 
 export const ResumeIndex = () => {
     const { Themes, currentTheme } = useContext(ThemeContext);

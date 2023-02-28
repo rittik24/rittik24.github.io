@@ -19,7 +19,7 @@
     height: fit-content;
     position: absolute;
     margin-top: 100px;
-} 
+}
 
 .skills-head {
     font-size: 2rem;
@@ -27,7 +27,7 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-   
+
 }
 
 .skills-cont {
@@ -41,6 +41,7 @@
     justify-content: center;
     align-content: center;
 }
+
 /* .frontend{
    display: grid;
 } */
@@ -54,144 +55,181 @@
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    text-align: center;
+    /* height: fit-content; */
+    /* border: 1px solid red; */
+    /* margin: auto; */
+    /* width: 80%; */
+    align-items: center;
+    
 }
 
 .skill-ptag {
     font-size: 1rem;
     text-align: center;
+    /* border: 1px solid red; */
+    align-items: center;
 }
 
- .skill > img {
+.skill>img {
     width: 100%;
     max-height: 60px;
     padding: 0;
-    margin: 0;
-} 
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
 
 .badge {
-    text-align: center;
+    /* text-align: center; */
     font-size: 48px;
+    margin: auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-items: center;
+    width: 40%;
 }
 
 .skill:hover {
     transform: scale(1.02);
 }
 
-.skill:hover > .JavaScript  {
+.skill:hover>.JavaScript {
     color: #F6D860;
 }
 
-.skill:hover > .html {
-    color:  #F06529;
+.skill:hover>.html {
+    color: #F06529;
 }
 
-.skill:hover > .css {
+.skill:hover>.css {
     color: #e31b5f;
 }
 
-.skill:hover > .react {
+.skill:hover>.react {
     color: #61DBFB;
 }
 
-.skill:hover > .redux {
+.skill:hover>.redux {
     color: #764abc;
 }
 
-.skill:hover > .next {
+.skill:hover>.next {
     color: purple;
 }
 
-.skill:hover > .mongo {
+.skill:hover>.mongo {
     color: #4DB33D;
 }
 
-.skill:hover > .nodejs {
+.skill:hover>.nodejs {
     color: #3C873A;
 }
 
-.skill:hover > .express {
+.skill:hover>.express {
     color: #3C873A;
 }
 
-.skill:hover > .chakra {
+.skill:hover>.chakra {
     color: #EF5B25;
 }
 
-.skill:hover > .vscode {
+.skill:hover>.vscode {
     color: #0078d7;
 }
 
 @media (max-width: 800px) {
     .badge {
         font-size: 32px;
+        text-align: center;
     }
+
     .skills-cont {
         grid-template-columns: 20% 20% 20% 20%;
         gap: 6%;
     }
+
     .skills-head {
-      font-size: 40px;
+        font-size: 40px;
     }
+
     .skill-ptag {
         font-size: 12px;
     }
-  }
+}
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .badge {
         font-size: 24px;
+        text-align: center;
     }
+
     .skills-head {
         font-size: 40px;
-      }
-      .skill-ptag {
-          font-size: 12px;
-      }
-  }
+    }
 
-  @media (max-width: 420px) {
+    .skill-ptag {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
     .badge {
         font-size: 20px;
+        text-align: center;
     }
+
     .skills-cont {
         grid-template-columns: 32% 32% 32%;
         gap: 3%;
     }
+
     .skills-head {
         font-size: 20px;
-      }
+        /* margin-top: 10px; */
+    }
 
-      .skill {
-          padding: 10px;
-      }
-      .skill-ptag {
-          font-size: 10px;
-      }
-      .skill > img {
-          display: none;
-      }
-      .main-skills {
-          margin: auto;
-          margin-top: 10px;
-      }
-      .section-skills {
+    .skill {
+        padding: 10px;
+         /* margin-top: 10px;  */
+    }
+
+    .skill-ptag {
+        font-size: 10px;
+    }
+
+    .skill>img {
+        display: none;
+    }
+
+    .main-skills {
+        margin: auto;
+        /* margin-top: 10px; */
+        /* border: 1px solid red; */
+        justify-content: space-between;
+        height: fit-content;
+
+    }
+
+    .section-skills {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
+        min-height: 110vh;
         height: fit-content;
         /* z-index: 2; */
-        /* border: 1px solid red; */
+        /* border: 1px solid yellow; */
     }
-  }
+}
 
-  @media (max-width: 350px) {
+@media (max-width: 350px) {
     .badge {
         font-size: 16px;
     }
+
     .skill {
         padding: 6px;
     }
-  }
+}

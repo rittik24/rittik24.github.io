@@ -28,7 +28,7 @@ export default function Simple() {
     { to: "skillsID", text: "SKILLS", id: 3 }, { to: "projectsID", text: "PROJECTS", id: 4 },
     { to: "contactID", text: "CONTACT", id: 5 }, { to: "githubID", text: "GITHUB", id: 6 }];
     const handleOpenAndDownlaodResume = () => {
-        window.open(`${Resume}`);
+        window.open(`${Resume}`,"_blank");
     };
     return (
         <>
@@ -56,7 +56,7 @@ export default function Simple() {
                             ))}
                             <a
                                 href={Resume}
-                                download="Ritik-Haldar-Resume"
+                                download="fw19_0770_Rittik_Haldar_Resume"
                                 onClick={handleOpenAndDownlaodResume}
                             >
                                 RESUME
@@ -73,6 +73,7 @@ export default function Simple() {
                                 minW={0}>
                                 <Avatar
                                     size={'md'}
+                                    marginRight={"5px"}
                                     src={
                                         'https://avatars.githubusercontent.com/u/105980445?v=4'
                                     }
@@ -97,7 +98,7 @@ export default function Simple() {
                             ))}
                             <a
                                 href={Resume}
-                                download="Ritik-Haldar-Resume"
+                                download="fw19_0770_Ritik_Haldar_Resume"
                                 onClick={handleOpenAndDownlaodResume}
                             >
                                 RESUME

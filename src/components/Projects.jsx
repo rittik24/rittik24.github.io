@@ -9,7 +9,7 @@ export const Project = () => {
     const projectCont = [
         {
             name: "Zee5.com Clone",
-            description: "ZEE5.COM is a subscription based streaming website that allows our members to watch TV shows, movies, web series and News on an internet connected device. It is a Collaborative project made in 5 days. My task was to build the navbar section.",
+            description: "ZEE5.COM is a subscription based streaming website that allows users to watch TV shows, movies, web series and News on an internet connected device. It is a Collaborative project build in 5 days. My task is to build the navbar section.",
             tech: "Tech-Stack: HTML | CSS | JavaScript | React | ChakraUI | Firebase",
             image: zee5,
             imageAlt: "zee5 image",
@@ -18,7 +18,7 @@ export const Project = () => {
         },
         {
             name: "TATA 1mg Clone",
-            description: "TATA 1mg.com is an e-commerce website that provides e-pharmacy, diagnostics, e-consultation and healthcare solutions related service all across india. It is an indivitual project made in 4 days and in this project I tried my best to clone this website.",
+            description: "TATA 1mg.com is an e-commerce website that provides e-pharmacy, diagnostics, e-consultation and healthcare solutions related service all across india. It is an indivitual project build in 4 days. In this project i tried my best to clone this website.",
             tech: "Tech-Stack: HTML | CSS | JavaScript | React.js",
             image: mg,
             imageAlt: "tata mg image",
@@ -27,7 +27,7 @@ export const Project = () => {
         },
         {
             name: "Zappos.com Clone",
-            description: "Zappos is an E-commerce website, where you can buy clothing, handbags, accessories, and more. It is a Collaborative project made in 5 days. My task was to build the cart page and payment page.",
+            description: "Zappos.com is an E-commerce website where you can buy clothing, handbags, accessories, and more. It is a Collaborative project build in 5 days. My task is to build the cart page and payment page.",
             tech: "Tech-Stack: HTML | CSS | JavaScript",
             image: Zappos,
             imageAlt: "Zappos image",
@@ -36,7 +36,7 @@ export const Project = () => {
         },   
         {
             name: "NDTV.com Clone",
-            description: "NDTV.com is an Indian news media company, focusing on broadcast and digital news publication. It is a collaborative project made in 5 days. this is an API base project.",
+            description: "NDTV.com is an Indian news media company, focusing on broadcast and digital news publication. It is a collaborative project build in 5 days. It is an API based project.",
             tech: "Tech-Stack: HTML | CSS | JavaScript",
             image: NDTV,
             imageAlt: "Ndtv image",

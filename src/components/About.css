@@ -79,8 +79,9 @@
   
     @media (max-width: 800px) {
       .main-about {
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 0px;
+        gap: 15px;
       }
       .aboutClass {
         width: 100%;

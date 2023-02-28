@@ -9,7 +9,7 @@
 }
 
 .heading-project {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -124,7 +124,7 @@
 
 @media (max-width: 800px) {
     .pro {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .data {
         width: 98%;
@@ -133,6 +133,7 @@
         width: 98%;
         margin: auto;
         margin-top: 40px;
+        margin-bottom: 10px;
         /* border-radius: 10px; */
     }
     .img > img {
@@ -141,12 +142,16 @@
     .repo > a{
         padding: 10px;
     }
+    .repo{
+        margin-bottom: 10px;
+    }
 }
 
 
   @media (max-width: 420px) {
     .heading-project {
       font-size: 20px;
+      margin-top: 40px;
     }
     .tech-stack, .repo, .desc, .database {
       font-size: 12px;
@@ -156,5 +161,16 @@
     }
     .repo > a{
         padding: 10px;
+    }
+    .pro {
+        /* display: flex; */
+        flex-direction: column-reverse;
+        /* box-shadow: 0 3px 10px rgba(52, 58, 139, 0.5); */
+    }
+    .repo{
+        margin-bottom: 10px;
+    }
+    .img{
+        margin-bottom: 10px;
     }
   }

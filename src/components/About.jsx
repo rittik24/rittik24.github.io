@@ -13,7 +13,7 @@ export const About = () => {
 
                     <p className="about-data">Hello, I am Rittik Haldar from Kolkata,WestBengal</p>
                     <p className="about-data">
-                        I'm a Full Stack Web developer. I'm a quick learner, enthusiastic person, a team player and passionate about coding.
+                        I'm a Full Stack Web Developer. I'm a quick learner, enthusiastic person, a team player and passionate about coding.
                         I have 1500+ hours of hands on coding.
                         I worked on various projects some of them you can check in the projects section.</p>
                 </div>

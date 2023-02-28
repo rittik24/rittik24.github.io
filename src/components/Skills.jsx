@@ -2,7 +2,7 @@
 import {
     SiCss3, SiNpm, SiHtml5, SiJavascript,
     SiRedux, SiReact, SiMaterialui, SiNodedotjs,
-    SiGithub, SiVisualstudiocode, SiNextdotjs, SiChakraui, SiTypescript, SiNetlify, SiMongodb, SiExpress
+    SiGithub, SiVisualstudiocode, SiNextdotjs, SiChakraui, SiTypescript, SiNetlify, SiMongodb, SiExpress,SiPostman
 } from "react-icons/si";
 import "./skills.css";
 import { useContext } from 'react';
@@ -110,6 +110,12 @@ export const Skills = () => {
                                 <SiVisualstudiocode />
                             </div>
                             <p className="skill-ptag">VS-Code</p>
+                        </div>
+                        <div className="skill" style={currentTheme === "light" ? Themes.light.navbar : Themes.dark.navbar} >
+                            <div className="badge chakra">
+                                <SiPostman />
+                            </div>
+                            <p className="skill-ptag">Postman</p>
                         </div>
                     </div>
             </div>
