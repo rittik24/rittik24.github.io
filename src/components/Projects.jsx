@@ -8,7 +8,7 @@ export const Project = () => {
     const projectCont = [
         {
             name: "QuikrBazaar.com Clone",
-            description: "QuikrBazaar.com is an E-commerce website where users can sell and buy their products. It is a Collaborative project built in 5 days. My task is to create the Home Page",
+            description: "QuikrBazaar.com is an E-commerce website where users can sell and buy their products. It is a Collaborative project built in 5 days. My task was to create the Home Page.",
             tech: "Tech-Stack: HTML | CSS | JavaScript | React | Redux | MongoBD | Node.js",
             image: Quikr,
             imageAlt: "Quikr image",
@@ -17,7 +17,7 @@ export const Project = () => {
         },
         {
             name: "Zee5.com Clone",
-            description: "ZEE5.COM is a subscription-based streaming website that allows users to watch TV shows, movies, web series, and News on an internet-connected device. It is a Collaborative project built in 5 days. My task is to create the navbar section.",
+            description: "ZEE5.COM is a subscription-based streaming website that allows users to watch TV shows, movies, web series, and News on an internet-connected device. It is a Collaborative project built in 5 days. My task was to create the navbar section.",
             tech: "Tech-Stack: HTML | CSS | JavaScript | React | ChakraUI | Firebase",
             image: zee5,
             imageAlt: "zee5 image",
@@ -26,11 +26,11 @@ export const Project = () => {
         },
         {
             name: "Zappos.com Clone",
-            description: "Zappos.com is an E-commerce website where you can buy clothing, handbags, accessories, and more. It is a Collaborative project built in 5 days. My task is to create the cart page and payment page.",
+            description: "Zappos.com is an E-commerce website where you can buy clothing, handbags, accessories, and more. It is a Collaborative project built in 5 days. My task was to create the cart page and payment page.",
             tech: "Tech-Stack: HTML | CSS | JavaScript",
             image: Zappos,
             imageAlt: "Zappos image",
-            git: "https://github.com/arijeet8008/excited-roof-1669",
+            git: "https://github.com/rittik24/Zappos.com-clone",
             live: "https://zappos-clone-de21a7.netlify.app",
         },   
         {
