@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.961b2ebf.css",
-    "main.js": "/static/js/main.38cfe8cc.js",
+    "main.js": "/static/js/main.d1d5ec8c.js",
     "static/js/787.3b288771.chunk.js": "/static/js/787.3b288771.chunk.js",
     "static/media/zee5.png": "/static/media/zee5.52e0b1665024c6d325b4.png",
     "static/media/rittik.JPG": "/static/media/rittik.063402f3d07ec6db0e4a.JPG",
-    "static/media/NDTV.png": "/static/media/NDTV.11c17750c766b58c6754.png",
     "static/media/1mg.png": "/static/media/1mg.c858444a71b46af08913.png",
+    "static/media/batterystore.png": "/static/media/batterystore.838e867a356f30a10ac4.png",
     "static/media/GoBazzar.com.png": "/static/media/GoBazzar.com.46f238180d4767908369.png",
     "static/media/Resume.pdf": "/static/media/Resume.5184069478e5c4223cc9.pdf",
     "static/media/Zappos.png": "/static/media/Zappos.b0faab41d45b3b0a9cf1.png",
     "static/media/hero.png": "/static/media/hero.2660d91cf5d3a556202b.png",
     "index.html": "/index.html",
     "main.961b2ebf.css.map": "/static/css/main.961b2ebf.css.map",
-    "main.38cfe8cc.js.map": "/static/js/main.38cfe8cc.js.map",
+    "main.d1d5ec8c.js.map": "/static/js/main.d1d5ec8c.js.map",
     "787.3b288771.chunk.js.map": "/static/js/787.3b288771.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.961b2ebf.css",
-    "static/js/main.38cfe8cc.js"
+    "static/js/main.d1d5ec8c.js"
   ]
 }
