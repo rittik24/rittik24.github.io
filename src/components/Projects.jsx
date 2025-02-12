@@ -1,0 +1,86 @@
+import "./Projects.css";
+import mg from "../image/1mg.png";
+import Zappos from "../image/Zappos.png";
+import zee5 from "../image/zee5.png"
+import Batterystore from "../image/batterystore.png"
+import Quikr from "../image/GoBazzar.com.png"
+export const Project = () => {
+    const projectCont = [
+        {
+            name: "BatteryStore.com",
+            description: "Battery Store is a fully functional E-commerce website dedicated to providing customers with a seamless experience in purchasing various types of batteries. It is a individual project built within 2 days",
+            tech: "Tech-Stack: React.JS | Redux.JS | Node.js | Express.js | MongoDB | Chakra UI",
+            image: Batterystore,
+            imageAlt: "BatteryStore image",
+            git: "https://github.com/rittik24/BatteryStores",
+            live: "https://batterystore.vercel.app/",
+        }, 
+        {
+            name: "QuikrBazaar.com Clone",
+            description: "QuikrBazaar.com is an E-commerce website where users can sell and buy their products. It is a Collaborative project built in 5 days. My task was to create the Home Page.",
+            tech: "Tech-Stack: HTML | CSS | JavaScript | React | Redux | MongoBD | Node.js",
+            image: Quikr,
+            imageAlt: "Quikr image",
+            git: "https://github.com/rittik24/Gobazzar.com-clone",
+            live: "https://gobazzar.vercel.app/",
+        },
+        {
+            name: "Zee5.com Clone",
+            description: "ZEE5.COM is a subscription-based streaming website that allows users to watch TV shows, movies, web series, and News on an internet-connected device. It is a Collaborative project built in 5 days. My task was to create the navbar section.",
+            tech: "Tech-Stack: HTML | CSS | JavaScript | React | ChakraUI | Firebase",
+            image: zee5,
+            imageAlt: "zee5 image",
+            git: "https://github.com/rittik24/Zee5.com.clone",
+            live: "https://comfy-dragon-c64b1f.netlify.app",
+        },
+        {
+            name: "Zappos.com Clone",
+            description: "Zappos.com is an E-commerce website where you can buy clothing, handbags, accessories, and more. It is a Collaborative project built in 5 days. My task was to create the cart page and payment page.",
+            tech: "Tech-Stack: HTML | CSS | JavaScript",
+            image: Zappos,
+            imageAlt: "Zappos image",
+            git: "https://github.com/rittik24/Zappos.com-clone",
+            live: "https://zappos-clone-de21a7.netlify.app",
+        },     
+        {
+            name: "TATA 1mg Clone",
+            description: "TATA 1mg.com is an e-commerce website that provides e-pharmacy, diagnostics, e-consultation, and healthcare solutions-related serviceS all across India. It is an individual project built in 4 days. In this project, I tried my best to clone this website.",
+            tech: "Tech-Stack: HTML | CSS | JavaScript | React.js",
+            image: mg,
+            imageAlt: "tata mg image",
+            git: "https://github.com/rittik24/yielding-tongue-8280",
+            live: "https://rad-axolotl-7d8ff0.netlify.app/",
+        },
+    ]
+    return (
+        <section id="projectsID" className="section-pro" >
+            <h1 className="heading-project">Projects</h1>
+            <div className="main-projects">
+
+                <div className="projects" >
+                    {
+                        projectCont.map((ele, j) => {
+                            return (
+                                <div key={`project${j}`} className="pro" >
+                                    <div className="data">
+                                        <h2 className="pro-head">{ele.name}</h2>
+                                        <p className="desc">{ele.description}</p>
+                                        <p className="tech-stack"> {ele.tech}</p>
+                                      
+                                        <p className="repo">
+                                            <a href={ele.git} target="_blank"><span >GitHub</span></a>
+                                            <a href={ele.live} target="_blank"><span >Live</span></a>
+                                        </p>
+                                    </div>
+                                    <div className="img">
+                                        <img src={ele.image} alt={ele.imageAlt} />
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </section>
+    )
+}

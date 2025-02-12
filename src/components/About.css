@@ -1,0 +1,110 @@
+.section-about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    height: fit-content;
+    /* z-index: 2; */
+    background-color:#001a1a ;
+    color: #FBFFE2;
+  }
+  
+  .main-about {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    position: absolute;
+    flex-direction: row;
+  }
+  
+  .aboutClass {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about {
+      animation: 1s ease-out 0s 1 slideInNameFromLeft;
+  }
+  
+  .about-head {
+    font-size: 40px;
+  }
+  
+  .about-data {
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .image {
+      width: 50%;
+      height:fit-content;
+      border-radius: 50%;
+      margin: auto;
+      animation: 1s ease-out 0s 1 slideInNameFromRight;
+  }
+  
+  .image > img {
+      margin: auto;
+      width: 100%;
+      border-radius: 20%;
+      /* background-color: snow; */
+      max-height: 300px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  
+  @keyframes slideInNameFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes slideInNameFromRight {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  
+    @media (max-width: 800px) {
+      .main-about {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        gap: 15px;
+      }
+      .aboutClass {
+        width: 100%;
+      }
+    }
+  
+  
+    @media (max-width: 490px) {
+      .main-about {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        /* border: 1px solid red; */
+        gap: 15px;
+      }
+      .about-head {
+        display: none;
+      }
+      .about-data {
+        font-size: 15px;
+      } 
+    }
+  
